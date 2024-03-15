@@ -1,5 +1,5 @@
 <title>{{ with .Title }}{{ . }} | {{end}}{{ .Site.Title }}</title>
-<meta name="description" content="{{ .Params.description | default .Site.Params.about.description}}">
+<meta name="description" content="{{ .Params.description | default .Summary | plainify }}">
 <link rel="icon" type="image/x-icon" href="/images/sk8r-wooper.png">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
