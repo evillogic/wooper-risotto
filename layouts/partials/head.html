@@ -1,4 +1,4 @@
-<title>{{ with .Title }}{{ . }} &ndash; {{end}}</title>
+<title>{{ with .Title }}{{ . }} | {{end}}{{ .Site.Title }}</title>
 <meta name="description" content="{{ .Params.description | default .Site.Params.about.description}}">
 <link rel="icon" type="image/x-icon" href="/images/sk8r-wooper.png">
 
